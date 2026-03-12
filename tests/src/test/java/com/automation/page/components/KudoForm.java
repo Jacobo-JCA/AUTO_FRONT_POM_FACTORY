@@ -1,4 +1,4 @@
-package com.automation.ui.components;
+package com.automation.page.components;
 
 import net.serenitybdd.core.pages.PageComponent;
 import net.serenitybdd.core.pages.WebElementFacade;

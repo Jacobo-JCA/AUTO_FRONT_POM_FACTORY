@@ -1,6 +1,6 @@
-package com.automation.ui;
+package com.automation.page;
 
-import com.automation.ui.components.LandingHero;
+import com.automation.page.components.LandingHero;
 import net.serenitybdd.annotations.DefaultUrl;
 import net.serenitybdd.core.pages.PageObject;
 

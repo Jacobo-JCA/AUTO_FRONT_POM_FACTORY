@@ -1,7 +1,7 @@
 package com.automation.tasks;
 
-import com.automation.ui.LandingPage;
-import com.automation.ui.KudosPage;
+import com.automation.page.LandingPage;
+import com.automation.page.KudosPage;
 import net.serenitybdd.annotations.Step;
 import static org.assertj.core.api.Assertions.assertThat;
 
