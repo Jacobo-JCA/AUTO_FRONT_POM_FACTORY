@@ -7,7 +7,7 @@ import static org.assertj.core.api.AssertionsForClassTypes.assertThat;
 
 public class VerifyKudoCreation {
 
-    KudoForm kudoForm; // package-private: Serenity inyecta PageComponents automáticamente en @Steps
+    KudoForm kudoForm;
 
     @Step("Verificar que el toast de éxito 'Kudo enviado' es visible")
     public void isSuccessful() {
