@@ -1,4 +1,4 @@
-Feature: E2E Flow from Landing to Kudos Page
+Feature: Nav Flow from Landing to Kudos Page
 
   @E2E
   Scenario Outline: Redirect to the Kudos form from the home page
