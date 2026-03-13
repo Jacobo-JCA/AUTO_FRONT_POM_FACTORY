@@ -8,7 +8,7 @@ import static org.assertj.core.api.AssertionsForClassTypes.assertThat;
 
 public class FillAndSubmitKudoForm {
 
-    KudoFormPage kudoFormPage; // package-private: Serenity inyecta PageObjects automáticamente en @Steps
+    KudoFormPage kudoFormPage;
     KudoForm kudoForm;
 
     @Step("Navegar al formulario de reconocimiento de Kudos")
