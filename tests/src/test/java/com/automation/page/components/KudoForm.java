@@ -46,6 +46,7 @@ public class KudoForm extends PageComponent {
 
     public void selectFromUser(String user) {
         fromUserSelect.waitUntilVisible();
+        waitForSelectToHaveOptions(fromUserSelect);
         fromUserSelect.selectByVisibleText(user);
     }
 

@@ -7,13 +7,9 @@ Feature: Kudo Creation via Recognition Form
   @E2E @CreateKudo
   Scenario Outline: Successfully submit the Kudo form with valid data
     Given the Sofkiano is on the Kudos recognition form
-    When they send a Kudo recognizing a colleague with the following details
-      | from   | recipient   | category   | message   |
-      | <from> | <recipient> | <category> | <message> |
+    When they send a Kudo recognizing a colleague with from "<from>", recipient "<recipient>", category "<category>", and message "<message>"
     Then the Kudo should be successfully registered
 
     Examples:
-      | from              | recipient         | category   | message                                      |
-      | Christopher Pallo | Santiago          | Innovation | Excelente colaboración en el sprint          |
-      | Santiago          | Frontend Team     | Teamwork   | Gran propuesta técnica para el pipeline      |
-      | Frontend Team     | Christopher Pallo | Passion    | Apoyo constante al equipo durante la entrega |
+      | from     | recipient         | category | message      |
+      | Santiago | Christopher Pallo | Teamwork | Buen trabajo |

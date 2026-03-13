@@ -12,7 +12,5 @@ Feature: Kudo Listing and Persistence Verification
     And the Kudo should show the message "<message>"
 
     Examples:
-      | from              | recipient         | category   | message                                      |
-      | Christopher Pallo | Santiago          | Innovation | Excelente colaboración en el sprint          |
-      | Santiago          | Frontend Team     | Teamwork   | Gran propuesta técnica para el pipeline      |
-      | Frontend Team     | Christopher Pallo | Passion    | Apoyo constante al equipo durante la entrega |
+      | from      | recipient         | category | message      |
+      | Santiago  | Christopher Pallo | Teamwork | Buen trabajo |

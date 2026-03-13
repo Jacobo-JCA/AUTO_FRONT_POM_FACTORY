@@ -1,6 +1,7 @@
 package com.automation.stepdefinitions;
 
 import com.automation.tasks.VerifyKudoInList;
+import io.cucumber.java.en.And;
 import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;
 import net.serenitybdd.annotations.Steps;
@@ -11,7 +12,6 @@ public class KudoListStepDefinitions {
     private String from;
     private String recipient;
     private String category;
-    private String message;
 
     @Given("the Sofkiano navigates to the Kudos list page")
     public void theSofkianoNavigatesToTheKudosListPage() {
@@ -24,14 +24,13 @@ public class KudoListStepDefinitions {
         this.recipient = recipient;
     }
 
-    @Then("the Kudo should show the category {string}")
+    @And("the Kudo should show the category {string}")
     public void theKudoShouldShowTheCategory(String category) {
         this.category = category;
     }
 
-    @Then("the Kudo should show the message {string}")
+    @And("the Kudo should show the message {string}")
     public void theKudoShouldShowTheMessage(String message) {
-        this.message = message;
         verifyKudoInList.verifyKudoExists(from, recipient, category, message);
     }
 }
